@@ -46,7 +46,7 @@ iex> Example.Greetings.morning "Sean"
 ### Module Attributes
 
 Module attributes are most commonly used as constants in Elixir.
-Let's look at a example:
+Let's look at an example:
 
 ```elixir
 defmodule Example do
@@ -251,7 +251,7 @@ If we attempt to call a macro that is not yet loaded Elixir will raise an error.
 With the `use` macro we can enable another module to modify our current module's definition.
 When we call `use` in our code we're actually invoking the `__using__/1` callback defined by the provided module.
 The result of the `__using__/1` macro becomes part of our module's definition.
-To get a better understanding how this works let's look at a example:
+To get a better understanding how this works let's look at an example:
 
 ```elixir
 defmodule Hello do
